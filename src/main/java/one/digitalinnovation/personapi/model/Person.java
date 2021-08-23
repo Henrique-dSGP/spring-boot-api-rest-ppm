@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import one.digitalinnovation.personapi.enums.PhoneType;
+import org.hibernate.validator.constraints.br.CPF;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.*;
@@ -28,6 +29,7 @@ public class Person {
     @Column(nullable = false)
     private String lastName;
 
+    @CPF
     @Column(nullable = false, unique = true)
     private String cpf;
 
