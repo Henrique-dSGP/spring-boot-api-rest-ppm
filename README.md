@@ -4,7 +4,7 @@
 
 
 
-## Using Spring Boot Starter with maven
+## Using Spring Boot with maven
 
 ## Dependencies *until now*:
 
